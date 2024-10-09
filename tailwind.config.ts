@@ -9,6 +9,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      gridTemplateColumns: {
+        "auth-fit": "repeat(auto-fit, minmax(300px, 1fr))",
+      },
       animation: {
         blob: "blob 30s infinite",
       },
