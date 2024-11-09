@@ -1,6 +1,7 @@
-import React, { PropsWithChildren } from "react";
+import { PropsWithChildren } from "react";
 import DashboardNavBar from "./DashboardNavBar";
 import { Metadata } from "next";
+import Provider from "./Provider";
 
 export const metadata: Metadata = {
   title: "Invent3 - Dashboard",
@@ -9,12 +10,12 @@ export const metadata: Metadata = {
 
 const DashboardLayout = ({ children }: PropsWithChildren) => {
   return (
-    <div className="flex gap-1 mt-[4rem] py-5">
-      <div className="w-[20%]">
+    <Provider>
+      <div className="w-full relative md:w-[20%] bg-blue-950">
         <DashboardNavBar />
       </div>
-      <div className="w-[80%]">{children}</div>
-    </div>
+      <div className="w-full p-2 md:w-[80%] bg-gradient">{children}</div>
+    </Provider>
   );
 };
 

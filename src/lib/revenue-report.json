@@ -1,0 +1,193 @@
+[
+  {
+    "id": "001",
+    "month": "January",
+    "target": 30000,
+    "target_reached": true,
+    "total_quantity_sold": 500,
+    "sold_items": [
+      "Lenovo IdeaPad",
+      "Samsung Galaxy",
+      "Apple Macbook",
+      "Dell Inspiron",
+      "HP Spectre"
+    ],
+    "total_revenue": 235400,
+    "profit_margin": 45900
+  },
+  {
+    "id": "002",
+    "month": "Februrary",
+    "target": 30000,
+    "target_reached": true,
+    "total_quantity_sold": 450,
+    "sold_items": [
+      "Lenovo IdeaPad",
+      "Samsung Galaxy",
+      "Apple Macbook",
+      "Dell Inspiron",
+      "HP Spectre"
+    ],
+    "total_revenue": 215400,
+    "profit_margin": 42000
+  },
+  {
+    "id": "003",
+    "month": "March",
+    "target": 30000,
+    "target_reached": false,
+    "total_quantity_sold": 320,
+    "sold_items": [
+      "Lenovo IdeaPad",
+      "Samsung Galaxy",
+      "Apple Macbook",
+      "Dell Inspiron",
+      "HP Spectre"
+    ],
+    "total_revenue": 9400,
+    "profit_margin": 3900
+  },
+  {
+    "id": "004",
+    "month": "April",
+    "target": 30000,
+    "target_reached": false,
+    "total_quantity_sold": 250,
+    "sold_items": [
+      "Lenovo IdeaPad",
+      "Samsung Galaxy",
+      "Apple Macbook",
+      "Dell Inspiron",
+      "HP Spectre"
+    ],
+    "total_revenue": 205400,
+    "profit_margin": 20900
+  },
+  {
+    "id": "005",
+    "month": "May",
+    "target": 30000,
+    "target_reached": true,
+    "total_quantity_sold": 600,
+    "sold_items": [
+      "Lenovo IdeaPad",
+      "Samsung Galaxy",
+      "Apple Macbook",
+      "Dell Inspiron",
+      "HP Spectre",
+      "Dell XPS",
+      "HP Spectre"
+    ],
+    "total_revenue": 335400,
+    "profit_margin": 49900
+  },
+  {
+    "id": "006",
+    "month": "June",
+    "target": 30000,
+    "target_reached": true,
+    "total_quantity_sold": 800,
+    "sold_items": [
+      "Lenovo IdeaPad",
+      "Samsung Galaxy",
+      "Apple Macbook",
+      "Dell Inspiron",
+      "HP Spectre",
+      "Acer Predator",
+      "Asus Zenbook",
+      "Dell XPS",
+      "HP Spectre"
+    ],
+    "total_revenue": 255400,
+    "profit_margin": 55900
+  },
+  {
+    "id": "007",
+    "month": "July",
+    "target": 30000,
+    "target_reached": true,
+    "total_quantity_sold": 500,
+    "sold_items": [
+      "Lenovo IdeaPad",
+      "Samsung Galaxy",
+      "Apple Macbook",
+      "Dell Inspiron",
+      "HP Spectre"
+    ],
+    "total_revenue": 235400,
+    "profit_margin": 45900
+  },
+  {
+    "id": "008",
+    "month": "August",
+    "target": 30000,
+    "target_reached": true,
+    "total_quantity_sold": 500,
+    "sold_items": [
+      "Lenovo IdeaPad",
+      "Samsung Galaxy",
+      "Apple Macbook",
+      "Dell Inspiron",
+      "HP Spectre"
+    ],
+    "total_revenue": 235400,
+    "profit_margin": 45900
+  },
+  {
+    "id": "009",
+    "month": "September",
+    "target": 30000,
+    "target_reached": true,
+    "total_quantity_sold": 500,
+    "sold_items": [
+      "Lenovo IdeaPad",
+      "Samsung Galaxy",
+      "Apple Macbook",
+      "Dell Inspiron",
+      "HP Spectre"
+    ],
+    "total_revenue": 235400,
+    "profit_margin": 45900
+  },
+  {
+    "id": "010",
+    "month": "October",
+    "target": 30000,
+    "target_reached": false,
+    "total_quantity_sold": 300,
+    "sold_items": [
+      "Lenovo IdeaPad",
+      "Samsung Galaxy",
+      "Apple Macbook",
+      "Dell Inspiron"
+    ],
+    "total_revenue": 235000,
+    "profit_margin": 45000
+  },
+  {
+    "id": "011",
+    "month": "November",
+    "target": 30000,
+    "target_reached": true,
+    "total_quantity_sold": 500,
+    "sold_items": [
+      "Lenovo IdeaPad",
+      "Samsung Galaxy",
+      "Apple Macbook",
+      "Dell Inspiron",
+      "HP Spectre"
+    ],
+    "total_revenue": 235400,
+    "profit_margin": 45900
+  },
+  {
+    "id": "012",
+    "month": "December",
+    "target": 30000,
+    "target_reached": false,
+    "total_quantity_sold": 200,
+    "sold_items": ["Lenovo IdeaPad", "Samsung Galaxy", "Dell Inspiron"],
+    "total_revenue": 5400,
+    "profit_margin": 900
+  }
+]

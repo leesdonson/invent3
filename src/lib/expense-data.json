@@ -1,0 +1,50 @@
+[
+  {
+    "label": "Jan",
+    "expenses": 19000
+  },
+  {
+    "label": "Feb",
+    "expenses": 15000
+  },
+  {
+    "label": "Mar",
+    "expenses": 20000
+  },
+  {
+    "label": "Apr",
+    "expenses": 22000
+  },
+  {
+    "label": "May",
+    "expenses": 20000
+  },
+  {
+    "label": "Jun",
+    "expenses": 26000
+  },
+  {
+    "label": "Jul",
+    "expenses": 28000
+  },
+  {
+    "label": "Aug",
+    "expenses": 30000
+  },
+  {
+    "label": "Sep",
+    "expenses": 23000
+  },
+  {
+    "label": "Oct",
+    "expenses": 34000
+  },
+  {
+    "label": "Nov",
+    "expenses": 12000
+  },
+  {
+    "label": "Dec",
+    "expenses": 30000
+  }
+]

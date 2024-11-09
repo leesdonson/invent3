@@ -19,16 +19,16 @@ import Spinner from "@/components/custom/Spinner";
 import Link from "next/link";
 
 const formSchema = z.object({
-  name: z.string().min(2, {
-    message: "Username must be at least 2 characters.",
+  name: z.string().min(6, {
+    message: "Username must be at least 6 characters.",
   }),
-  email: z.string().min(1, {
+  email: z.string().email({ message: "Invalid Email format" }).min(4, {
     message: "Please enter your email.",
   }),
-  password: z.string().min(1, {
+  password: z.string().min(8, {
     message: "Please enter your password.",
   }),
-  confirmPassword: z.string().min(1, {
+  confirmPassword: z.string().min(8, {
     message: "Please confirm your password.",
   }),
 });

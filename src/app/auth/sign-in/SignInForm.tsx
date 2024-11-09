@@ -17,29 +17,56 @@ import {
 import { Input } from "@/components/ui/input";
 import Spinner from "@/components/custom/Spinner";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { toast } from "@/hooks/use-toast";
+import { useContext } from "react";
+import { UserContext } from "@/context/UserContext";
 
 const formSchema = z.object({
-  email: z.string().min(1, {
-    message: "Please enter your email.",
-  }),
-  password: z.string().min(1, {
-    message: "Please enter your password.",
+  username: z
+    .string()
+    .min(3, {
+      message: "Please enter username.",
+    })
+    .min(4),
+  password: z.string().min(8, {
+    message: "Password must be at least 8 characters long.",
   }),
 });
 
 const SignInForm = () => {
+  const router = useRouter();
+  const { setUsername } = useContext(UserContext);
   // handle submit
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      email: "",
+      username: "",
       password: "",
     },
   });
   //   console.log(form);
 
   const onSubmit = (values: z.infer<typeof formSchema>) => {
-    console.log(values);
+    if (!values) {
+      return toast({
+        title: "Error",
+        description: "Please enter username and password.",
+        variant: "destructive",
+      });
+    }
+
+    if (values.username !== "invent3" || values.password !== "manager3") {
+      return toast({
+        title: "Error",
+        description: "Invalid username or password.",
+        variant: "destructive",
+      });
+    }
+
+    setUsername(values.username);
+
+    router.push("/");
   };
 
   return (
@@ -50,15 +77,15 @@ const SignInForm = () => {
       >
         <FormField
           control={form.control}
-          name="email"
+          name="username"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Email</FormLabel>
+              <FormLabel>Username</FormLabel>
               <FormControl>
                 <Input
                   className="border-slate-700"
-                  type="email"
-                  placeholder="email"
+                  type="string"
+                  placeholder="username"
                   {...field}
                 />
               </FormControl>
@@ -85,10 +112,10 @@ const SignInForm = () => {
           )}
         />
         <p className="text-slate-800 text-sm">
-          Don't have an account?
+          Don't have Sign in Credentials?
           <Link href="/auth/sign-up" className="text-sky-600">
             {" "}
-            Sign Up
+            Get Now
           </Link>
         </p>
 

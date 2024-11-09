@@ -1,3 +1,4 @@
+import LoginStatus from "@/components/custom/LoginStatus";
 import { Blocks } from "lucide-react";
 import Link from "next/link";
 import React from "react";
@@ -18,7 +19,7 @@ const NavBar = () => {
       <div className="">
         <Link className="flex items-center gap-2" href="/">
           <Blocks size={42} color="blue" />
-          <h1 className="text-3xl font-bold gradient-text translate-y-1">
+          <h1 className="md:text-3xl text-2xl font-bold gradient-text translate-y-1">
             Invent3
           </h1>
         </Link>
@@ -33,6 +34,7 @@ const NavBar = () => {
             {link.label}
           </Link>
         ))}
+        <LoginStatus />
       </nav>
     </header>
   );
