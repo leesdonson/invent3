@@ -1,10 +1,10 @@
 "use client";
 
-import { useContext } from "react";
+import { UserContext } from "@/context/UserContext";
 import { Button } from "../ui/button";
 import Link from "next/link";
-import { UserContext } from "@/context/UserContext";
 import { FaAnglesRight } from "react-icons/fa6";
+import { useContext } from "react";
 
 const Hero = () => {
   const { username } = useContext(UserContext);

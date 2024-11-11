@@ -8,7 +8,6 @@ import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -66,6 +65,12 @@ const SignInForm = () => {
 
     setUsername(values.username);
 
+    toast({
+      title: "Success",
+      description: "You have successfully signed in.",
+      variant: "default",
+    });
+
     router.push("/");
   };
 
@@ -84,7 +89,7 @@ const SignInForm = () => {
               <FormControl>
                 <Input
                   className="border-slate-700"
-                  type="string"
+                  type="text"
                   placeholder="username"
                   {...field}
                 />
@@ -112,7 +117,7 @@ const SignInForm = () => {
           )}
         />
         <p className="text-slate-800 text-sm">
-          Don't have Sign in Credentials?
+          Don&#39;t have Sign in Credentials?
           <Link href="/auth/sign-up" className="text-sky-600">
             {" "}
             Get Now

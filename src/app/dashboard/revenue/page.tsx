@@ -4,7 +4,7 @@ import { Chart as ChartJS, LineElement, defaults } from "chart.js/auto";
 import { Line } from "react-chartjs-2";
 import revenueData from "@/lib/revenue-data.json";
 import RevenueCard from "./RevenueCard";
-import { revenueData as revenueSummary } from "@/lib/revenue-summary";
+// import { revenueData as revenueSummary } from "@/lib/revenue-summary";
 import revenueReport from "@/lib/revenue-report.json";
 import { useState } from "react";
 
@@ -75,7 +75,7 @@ const RevenuePage = () => {
               <option value="" disabled={true}>
                 Select a month
               </option>
-              {revenueReport.map((d: any) => (
+              {revenueReport.map((d) => (
                 <option key={d.id} value={d.month}>
                   {d.month}
                 </option>

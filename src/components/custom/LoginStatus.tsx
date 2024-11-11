@@ -4,12 +4,18 @@ import Link from "next/link";
 import { Button } from "../ui/button";
 import { useContext } from "react";
 import { UserContext } from "@/context/UserContext";
+import { toast } from "@/hooks/use-toast";
 
 const LoginStatus = () => {
   const { username, setUsername } = useContext(UserContext);
 
   const handleLogout = () => {
+    toast({
+      title: "Success",
+      description: "You have successfully logged out.",
+    });
     setUsername("");
+    window.location.reload();
   };
 
   return (

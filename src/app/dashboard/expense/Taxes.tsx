@@ -1,6 +1,6 @@
 "use client";
 
-import { Chart as ChartJS, defaults } from "chart.js/auto";
+import { defaults } from "chart.js/auto";
 import { Doughnut } from "react-chartjs-2";
 
 defaults.maintainAspectRatio = false;
