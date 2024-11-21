@@ -26,7 +26,7 @@ const Hero = () => {
           </Link>
         </Button>
       ) : (
-        <div className="flex items-center justify-center z-10 gap-5">
+        <div className="flex p-2 items-center justify-center z-10 gap-5">
           <Button asChild>
             <Link href="/auth/sign-in">Sign In as Manager</Link>
           </Button>
