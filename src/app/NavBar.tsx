@@ -15,7 +15,7 @@ const links = [
 ];
 const NavBar = () => {
   return (
-    <header className="flex items-center justify-between fixed top-0 left-0 right-0 z-20 gradient p-4 w-full">
+    <header className="flex items-center justify-between fixed top-0 left-0 right-0 z-20 gradient md:px-10 p-4 w-full">
       <div className="">
         <Link className="flex items-center gap-0 md:gap-2" href="/">
           <Blocks size={42} color="blue" />
