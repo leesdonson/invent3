@@ -35,7 +35,7 @@ const DashboardNavBar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="flex w-full flex-col sticky top-[5rem] z-40">
+    <div className="flex w-full flex-col sticky top-20 z-40">
       <div className="relative w-full flex flex-col z-10">
         <nav
           className={

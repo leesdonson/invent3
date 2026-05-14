@@ -13,9 +13,9 @@ defaults.plugins.title.font = {
 
 const MiscellenousCost = () => {
   return (
-    <div className="flex justify-between flex-col md:flex-row items-start border-b border-slate-700 py-2">
+    <div className="flex justify-between flex-col md:flex-row items-start bg-neutral-900 rounded-lg border border-slate-700 py-2 px-2">
       <div className="w-full md:w-1/2">
-        <p className="text-lg font-semibold text-blue-600">
+        <p className="text-lg font-semibold text-green-400">
           Miscellaneous Costs
         </p>
 
@@ -36,11 +36,11 @@ const MiscellenousCost = () => {
             Depreciation - <span className="font-semibold">K2,300.00</span>
           </li>
         </ul>
-        <p className="text-xl mb-2 font-semibold text-blue-800">
+        <p className="text-xl mb-2 font-semibold text-blue-300">
           Total: K31,240.00
         </p>
       </div>
-      <div className="w-full md:w-1/2 p-2 border border-slate-500 rounded-md">
+      <div className="w-full md:w-1/2 p-2 border bg-neutral-50 border-slate-500 rounded-md">
         <Bar
           data={{
             labels: [

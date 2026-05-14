@@ -17,7 +17,7 @@ import { Input } from "@/components/ui/input";
 import Spinner from "@/components/custom/Spinner";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { toast } from "@/hooks/use-toast";
+import { toast } from "sonner";
 import { useContext } from "react";
 import { UserContext } from "@/context/UserContext";
 
@@ -47,28 +47,33 @@ const SignInForm = () => {
   //   console.log(form);
 
   const onSubmit = (values: z.infer<typeof formSchema>) => {
-    if (!values) {
-      return toast({
-        title: "Error",
-        description: "Please enter username and password.",
-        variant: "destructive",
+    if (!values)
+      toast.error("Please fill in the form correctly.", {
+        style: {
+          border: "1px solid red",
+          padding: "16px",
+          color: "red",
+        },
       });
-    }
 
     if (values.username !== "invent3" || values.password !== "manager3") {
-      return toast({
-        title: "Error",
-        description: "Invalid username or password.",
-        variant: "destructive",
+      return toast.error("Invalid username or password.", {
+        style: {
+          border: "1px solid red",
+          padding: "16px",
+          color: "red",
+        },
       });
     }
 
     setUsername(values.username);
 
-    toast({
-      title: "Success",
-      description: "You have successfully signed in.",
-      variant: "default",
+    toast.success("You have successfully signed in.", {
+      style: {
+        border: "1px solid green",
+        padding: "16px",
+        color: "green",
+      },
     });
 
     router.push("/");
@@ -78,17 +83,20 @@ const SignInForm = () => {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 space-y-6 border border-slate-600 rounded-md p-5"
+        className="w-full text-neutral-200 border border-slate-700 p-5 rounded-xl bg-[#0a0f1d]"
       >
+        <p className="text-3xl font-bold py-5 w-full text-center">
+          Welcome back!
+        </p>
         <FormField
           control={form.control}
           name="username"
           render={({ field }) => (
-            <FormItem>
-              <FormLabel>Username</FormLabel>
+            <FormItem className="mb-4">
+              <FormLabel className="text-lg font-heading">Username</FormLabel>
               <FormControl>
                 <Input
-                  className="border-slate-700"
+                  className="border-slate-500 text-lg w-full p-3 rounded font-semibold"
                   type="text"
                   placeholder="username"
                   {...field}
@@ -102,11 +110,11 @@ const SignInForm = () => {
           control={form.control}
           name="password"
           render={({ field }) => (
-            <FormItem>
-              <FormLabel>Password</FormLabel>
+            <FormItem className="mb-4">
+              <FormLabel className="text-lg font-heading">Password</FormLabel>
               <FormControl>
                 <Input
-                  className="border-slate-700"
+                  className="border-slate-500 text-lg w-full p-3 rounded font-semibold"
                   type="password"
                   placeholder="password"
                   {...field}
@@ -116,7 +124,7 @@ const SignInForm = () => {
             </FormItem>
           )}
         />
-        <p className="text-slate-800 text-sm">
+        <p className="text-slate-100 mb-5 text-base">
           Don&#39;t have Sign in Credentials?
           <Link href="/auth/sign-up" className="text-sky-600">
             {" "}
@@ -124,7 +132,10 @@ const SignInForm = () => {
           </Link>
         </p>
 
-        <Button type="submit">
+        <Button
+          type="submit"
+          className="w-full text-lg font-semibold bg-green-600 p-2 rounded-md text-white hover:bg-green-700 transition-colors duration-300 block text-center"
+        >
           {form.formState.isSubmitting ? <Spinner /> : "Login"}
         </Button>
       </form>

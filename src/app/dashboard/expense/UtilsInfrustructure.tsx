@@ -13,9 +13,9 @@ defaults.plugins.title.font = {
 
 const UtilsInfrustructure = () => {
   return (
-    <div className="flex justify-between flex-col md:flex-row items-start border-b border-slate-700 py-2">
+    <div className="flex justify-between flex-col md:flex-row items-start border bg-neutral-900 rounded-lg border-slate-700 py-2 px-2">
       <div className="w-full md:w-1/2">
-        <p className="text-lg font-semibold text-blue-500">
+        <p className="text-lg font-semibold text-green-400">
           Utilities and Infrastructure Cost
         </p>
         <ul className="py-2">
@@ -31,11 +31,11 @@ const UtilsInfrustructure = () => {
             Insurance - <span className="font-semibold">K15,290.00</span>
           </li>
         </ul>
-        <p className="text-xl mb-2 font-semibold text-blue-800">
+        <p className="text-xl mb-2 font-semibold text-blue-300">
           Total: K30,240.00
         </p>
       </div>
-      <div className="w-full md:w-1/2 p-2 border border-slate-500 rounded-md">
+      <div className="w-full md:w-1/2 p-2 border bg-neutral-50 border-slate-500 rounded-md">
         <Doughnut
           data={{
             labels: ["Electricity", "Internet", "Insurance"],

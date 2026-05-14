@@ -13,9 +13,9 @@ defaults.plugins.title.font = {
 
 const OperationalCost = () => {
   return (
-    <div className="flex justify-between flex-col md:flex-row items-start border-b border-slate-700 py-2">
+    <div className="flex justify-between flex-col md:flex-row items-start bg-neutral-900 rounded-lg border border-slate-700 py-2 px-2">
       <div className="w-full md:w-1/2">
-        <p className="text-lg font-semibold text-blue-500">
+        <p className="text-lg font-semibold text-green-500">
           Operational Expenses
         </p>
         <ul className="py-2">
@@ -34,11 +34,11 @@ const OperationalCost = () => {
             <span className="font-semibold">K5,290.00</span>
           </li>
         </ul>
-        <p className="text-xl mb-2 font-semibold text-blue-800">
+        <p className="text-xl mb-2 font-semibold text-blue-300">
           Total: K45,230.00
         </p>
       </div>
-      <div className="w-full md:w-1/2 p-2 border border-slate-500 rounded-md">
+      <div className="w-full md:w-1/2 p-2 border bg-neutral-50 border-slate-500 rounded-md">
         <Bar
           data={{
             labels: ["Salaries ", "Benefits", "Training", "Maintenance"],

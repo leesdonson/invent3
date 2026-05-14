@@ -19,7 +19,7 @@ const Hero = () => {
         View and manage all your assets in one place.
       </p>
       {username ? (
-        <Button asChild>
+        <Button className="border" asChild>
           <Link href="/dashboard">
             Dashboard
             <FaAnglesRight className="ml-5" size={20} color="white" />

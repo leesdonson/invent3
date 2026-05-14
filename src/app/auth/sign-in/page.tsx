@@ -3,8 +3,10 @@ import SignInForm from "./SignInForm";
 
 const SignInPage = () => {
   return (
-    <div className="mt-[6rem] container mx-auto py-5 w-full flex items-start justify-center p-3">
-      <SignInForm />
+    <div className="flex p-2 items-center justify-center min-h-screen bg-[#030712]">
+      <div className="max-w-xl mx-auto w-full">
+        <SignInForm />
+      </div>
     </div>
   );
 };

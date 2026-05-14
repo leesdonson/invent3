@@ -26,9 +26,11 @@ const RevenuePage = () => {
 
   const data = revenueData;
   return (
-    <div className="text-slate-900 p-2 w-full flex items-start justify-center flex-col gap-3">
-      <h1 className="text-xl py-5 font-bold">Sales and Revenue Tracking.</h1>
-      <div className="text-slate-900 border border-slate-700 p-4 w-full rounded-md">
+    <div className="h-full w-full overflow-y-auto scroll-smooth scrollbar-thin scrollbar-thumb-slate-50 scrollbar-track-blue-600 p-3">
+      <div className="mt-14">
+        <h1 className="text-xl py-5 font-bold">Sales and Revenue Tracking.</h1>
+      </div>
+      <div className="border border-slate-700 text-neutral-900 bg-neutral-50 p-4 w-full rounded-md">
         <Line
           data={{
             labels: data.map((d) => d.label),

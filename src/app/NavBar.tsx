@@ -1,7 +1,6 @@
 import LoginStatus from "@/components/custom/LoginStatus";
 import { Blocks } from "lucide-react";
 import Link from "next/link";
-import React from "react";
 
 const links = [
   {
@@ -15,11 +14,11 @@ const links = [
 ];
 const NavBar = () => {
   return (
-    <header className="flex items-center justify-between fixed top-0 left-0 right-0 z-20 gradient md:px-10 p-4 w-full">
+    <header className="flex items-center bg-[#030712]/30 backdrop-blur-md justify-between fixed top-0 left-0 right-0 z-20 md:px-10 p-2 w-full">
       <div className="">
-        <Link className="flex items-center gap-0 md:gap-2" href="/">
-          <Blocks size={42} color="blue" />
-          <h1 className="md:text-3xl sm:text-2xl text-lg font-bold gradient-text translate-y-1">
+        <Link className="flex items-center justify-center gap-1" href="/">
+          <Blocks className="h-8 w-8 md:h-10 md:w-10" color="blue" />
+          <h1 className="md:text-3xl flex bg-linear-to-r from-blue-600 to-red-600 text-transparent bg-clip-text sm:text-2xl text-lg font-bold tracking-tighttranslate-y-1">
             Invent3
           </h1>
         </Link>
@@ -29,7 +28,7 @@ const NavBar = () => {
           <Link
             key={link.href}
             href={link.href}
-            className="text-md font-medium cursor-pointer hover:bg-blue-800 transition-all py-1 px-2 rounded-md text-slate-200"
+            className="text-md bg-slate-800/80 border border-slate-700 text-slate-300 px-3 py-1 rounded-md hover:bg-slate-700/50 transition-colors duration-300"
           >
             {link.label}
           </Link>

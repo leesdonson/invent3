@@ -410,7 +410,7 @@ export const products: ProductProps[] = [
     image: "/jbl_blast.png",
   },
   {
-    id: 16,
+    id: 17,
     name: "JBL Boom",
     slug: "jbl-boom",
     description: `Lorem1 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -434,7 +434,7 @@ export const products: ProductProps[] = [
     image: "/jbl_boom-black.png",
   },
   {
-    id: 17,
+    id: 18,
     name: "JBL Boom",
     slug: "jbl-boom-colored",
     description: `Lorem1 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -458,7 +458,7 @@ export const products: ProductProps[] = [
     image: "/jbl_boom-colored.png",
   },
   {
-    id: 17,
+    id: 19,
     name: "JBL Boom 2",
     slug: "jbl-boom-red",
     description: `Lorem1 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -482,7 +482,7 @@ export const products: ProductProps[] = [
     image: "/jbl_boom-red.png",
   },
   {
-    id: 18,
+    id: 20,
     name: "JBL Headphone",
     slug: "jbl-headphone",
     description: `Lorem1 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -506,7 +506,7 @@ export const products: ProductProps[] = [
     image: "/jnl_headphone-black.png",
   },
   {
-    id: 19,
+    id: 21,
     name: "Lenovo",
     slug: "lenovo-amd",
     description: `Lorem1 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -530,9 +530,9 @@ export const products: ProductProps[] = [
     image: "/lenovo_amd.png",
   },
   {
-    id: 20,
-    name: "Lenovo Rizon",
-    slug: "lenovo-rizon",
+    id: 22,
+    name: "Lenovo Legion",
+    slug: "lenovo-legion",
     description: `Lorem1 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
       Veniam recusandae eos quia minus quae perferendis!`,
     price: 3700,
@@ -554,7 +554,7 @@ export const products: ProductProps[] = [
     image: "/lenovo-rizon.png",
   },
   {
-    id: 21,
+    id: 23,
     name: "MacBook Workbook",
     slug: "macbook-workbook",
     description: `Lorem1 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -578,7 +578,7 @@ export const products: ProductProps[] = [
     image: "/macbook_work.jpg",
   },
   {
-    id: 22,
+    id: 24,
     name: "MacBook Pro",
     slug: "macbook-pro",
     description: `Lorem1 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -602,7 +602,7 @@ export const products: ProductProps[] = [
     image: "/macbook-pro.png",
   },
   {
-    id: 23,
+    id: 25,
     name: "MacBook Air",
     slug: "macbook-air",
     description: `Lorem1 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -626,7 +626,7 @@ export const products: ProductProps[] = [
     image: "/macbookAir.jpg",
   },
   {
-    id: 24,
+    id: 26,
     name: "Dell Monitor",
     slug: "dell-monitor",
     description: `Lorem1 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -650,7 +650,7 @@ export const products: ProductProps[] = [
     image: "/monitor_curved.png",
   },
   {
-    id: 25,
+    id: 27,
     name: "Dell Monitor",
     slug: "dell-monitor1",
     description: `Lorem1 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -674,7 +674,7 @@ export const products: ProductProps[] = [
     image: "/monito_curved1.png",
   },
   {
-    id: 26,
+    id: 28,
     name: "Lenovo Monitor",
     slug: "lenovo-monitor",
     description: `Lorem1 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -698,7 +698,7 @@ export const products: ProductProps[] = [
     image: "/monitor_flat.png",
   },
   {
-    id: 27,
+    id: 29,
     name: "Philips Speaker",
     slug: "philips-speaker",
     description: `Lorem1 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -722,7 +722,7 @@ export const products: ProductProps[] = [
     image: "/philips_spker.png",
   },
   {
-    id: 28,
+    id: 30,
     name: "Apple Smartwatch",
     slug: "apple-smartwatch",
     description: `Lorem1 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -746,7 +746,7 @@ export const products: ProductProps[] = [
     image: "/samrt-watch.png",
   },
   {
-    id: 29,
+    id: 31,
     name: "Apple Smartwatch Black",
     slug: "apple-smart-watch-black",
     description: `Lorem1 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -770,7 +770,7 @@ export const products: ProductProps[] = [
     image: "/smartwatch-black.png",
   },
   {
-    id: 30,
+    id: 32,
     name: "Apple Smartwatch",
     slug: "apple-smart-watch-one",
     description: `Lorem1 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -794,7 +794,7 @@ export const products: ProductProps[] = [
     image: "/smartwatch.png",
   },
   {
-    id: 31,
+    id: 33,
     name: "Samsung Slim",
     slug: "samsung-laptop",
     description: `Lorem1 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -818,7 +818,7 @@ export const products: ProductProps[] = [
     image: "/samsung.png",
   },
   {
-    id: 32,
+    id: 34,
     name: "Xiomi Slim",
     slug: "xiomi-laptop",
     description: `Lorem1 Lorem ipsum dolor sit amet consectetur adipisicing elit. 

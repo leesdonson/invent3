@@ -19,11 +19,7 @@ const Provider = ({ children }: Props) => {
     }
   }, [username]);
 
-  return (
-    <div className="flex relative flex-col md:flex-row gap-1 mt-[3rem] py-5">
-      {children}
-    </div>
-  );
+  return <div className="flex h-screen w-full overflow-hidden">{children}</div>;
 };
 
 export default Provider;

@@ -13,8 +13,8 @@ interface Props {
 
 const RevenueCard = ({ revenue }: { revenue: Props }) => {
   return (
-    <div className="text-slate-900 w-full border border-slate-700 p-2 relative rounded-md ">
-      <div className="absolute bottom-0 right-0 p-2  bg-gradient-to-r from-blue-900 via-slate-700 to-blue-900 rounded-br-md ">
+    <div className="w-full border border-slate-700 p-2 relative rounded-md ">
+      <div className="absolute bottom-0 right-0 p-2  bg-linear-to-r from-blue-900 via-slate-700 to-blue-900 rounded-br-md ">
         <p className="text-md text-white">
           Target: K{revenue.target.toFixed(2)}{" "}
         </p>
@@ -27,12 +27,12 @@ const RevenueCard = ({ revenue }: { revenue: Props }) => {
       </div>
       <div className="border-b border-slate-700 py-3">
         <p className="text-xl font-semibold text-blue-600">Sales Records</p>
-        <span className="text-sm text-slate-700 ">
+        <span className="text-sm ">
           Information on each sale, including date, quantity sold, total
           revenue, and payment method
         </span>
         <div className="mt-1 ">
-          <p className="text-lg mb-1 font-semibold text-slate-100 w-[8rem] bg-slate-700 py-1 px-2 rounded-md">
+          <p className="text-lg mb-1 font-semibold text-slate-100 w-32 bg-slate-700 py-1 px-2 rounded-md">
             {revenue.month}
           </p>
           <div className="">
