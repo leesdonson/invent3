@@ -139,3 +139,12 @@
     @apply text-2xl font-bold;
   }
 }
+
+@layer components {
+  .visual-dashboard {
+    @apply border border-neutral-700 rounded-lg bg-neutral-950;
+  }
+  .visual-text-dashboard {
+    @apply text-4xl text-center py-6 font-extrabold text-blue-600;
+  }
+}
